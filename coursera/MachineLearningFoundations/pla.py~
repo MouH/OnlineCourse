@@ -1,0 +1,22 @@
+
+def parse_data():
+    # parse date into array format
+    x = []
+    y = []
+    for line in open("train.dat"):
+        a = line.strip().split()
+        x.append([a[:-1]])
+        y.append(a[-1])
+    return x,y
+
+
+def main():
+
+    x, y = parse_data()
+
+    print len(x)
+    print len(y)
+
+if __name__ == "__main__":
+    main()
+    

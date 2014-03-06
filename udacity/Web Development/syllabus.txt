@@ -1,0 +1,21 @@
+
+How the Web Works
+Introduction to HTTP and Web Applications
+
+How to Have Users
+Getting and processing user input
+
+How to Manage State
+Databases and persistent data
+
+Whom to Trust
+User authentication and access control
+
+How to Connect
+Web applications as services, using APIs
+
+How to Serve Millions
+Scaling, caching, optimizations
+
+Changing the World
+Building a successful web application, project

@@ -1,0 +1,35 @@
+import random
+
+def generate_data(data_size):
+    '''
+    with the set data size, return a tuple of x,y
+    '''
+
+    # generate x
+    x = []
+    for i in range(0,data_size):
+        x.append(random.uniform(-1,1))
+    # generate y
+    y = []
+    for i in x:
+        yi = 0
+        if x > 0:
+            yi = 1
+        else:
+            yi = -1
+
+        flips = random.random()
+        if flips < 0.2:
+            yi = yi * -1
+        y.append(yi)
+    return x, y
+
+def decision_stump(data_size):
+    x, y = generate_data(data_size)
+    
+def main():
+    x, y = generate_data(10)
+    print y
+
+if __name__ == "__main__":
+    main()
